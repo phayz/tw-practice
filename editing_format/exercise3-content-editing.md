@@ -31,10 +31,10 @@ Tip: You can also add an existing file to a repository from the GitHub website.
 **The command line instructions below assume you're using macOS.**
 
 
+1. Open Terminal.
+1. Change the current working directory to your local repository.
 1. On your computer, move the file you'd like to upload to GitHub into the local directory that was created when you cloned the repository.
-2. Open Terminal.
-3. Change the current working directory to your local repository.
-4. Stage the file for commit to your local repository.
+1. Stage the file for commit to your local repository.
    ```
    $ git add .
    # Adds the file to your local repository and stages it for commit. To unstage a file, use 'git reset HEAD YOUR-FILE'.
