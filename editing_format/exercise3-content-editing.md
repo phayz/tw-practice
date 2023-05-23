@@ -1,12 +1,17 @@
 # Adding a file to a repository
 
+WARNING:
+Files that you add to a repository via a browser are limited to 25 MB per file. You can add larger files, up to 100 MB each, via the command line. For more information, see "Adding a file to a repository using the command line."
+
 To add files larger than 100 MB, you must use Git Large File Storage.
 
 Git LFS handles large files by storing references to the file in the repository, but not the actual file itself. To work around Git's architecture, Git LFS creates a pointer file which acts as a reference to the actual file (which is stored somewhere else). GitHub manages this pointer file in your repository. When you clone the repository down, GitHub uses the pointer file as a map to go and find the large file for you.
 
 
+
+
 WARNING:
-Files that you add to a repository via a browser are limited to 25 MB per file. You can add larger files, up to 100 MB each, via the command line. For more information, see "Adding a file to a repository using the command line."
+If a repository has any protected branches, you can't edit or upload files in the protected branch using GitHub. For more information, see ["About protected branches."](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches)
 
 ## Adding a file to a repository on GitHub
 
@@ -19,8 +24,6 @@ Files that you add to a repository via a browser are limited to 25 MB per file. 
 5. Below the commit message fields, decide whether to add your commit to the current branch or to a new branch. If your current branch is the default branch, you should choose to create a new branch for your commit and then create a pull request. For more information, see "Creating a pull request."
 6. Click Propose changes.
 
-WARNING:
-If a repository has any protected branches, you can't edit or upload files in the protected branch using GitHub. For more information, see ["About protected branches."](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches)
 
 ## Adding a file to a repository using the command line
 
