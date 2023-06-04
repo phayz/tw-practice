@@ -31,6 +31,9 @@ You can upload an existing file to a repository on GitLab.com using the command 
 
 Tip: You can also add an existing file to a repository from the GitHub website.
 
+NOTE:
+If you're adding a file from the command line, you must have already created a repository on GitHub, or have an existing repository owned by someone else you'd like to contribute to, and cloned the repository locally on your computer.
+
 **The command line instructions below assume you're using macOS.**
 
 
@@ -52,6 +55,3 @@ Tip: You can also add an existing file to a repository from the GitHub website.
    $ git push origin YOUR_BRANCH
    # Pushes the changes in your local repository up to the remote repository you specified as the origin
    ```
-
-NOTE:
-If you're adding a file from the command line, you must have already created a repository on GitHub, or have an existing repository owned by someone else you'd like to contribute to, and cloned the repository locally on your computer.
